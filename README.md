@@ -1,4 +1,59 @@
-An Agent-First Company (AFC) runs its operations through AI agents assigned to functional roles — outreach, research, content, fundraising, client delivery — instead of filling those roles by hiring humans. The founder operates as the architect and decision-maker, while agents handle the repeatable, specifiable work that would otherwise require a team.
+# agent-first-company
+
+**An Agent-First Company (AFC) organizes its workforce around AI agents rather than adding AI to an existing human org. We've documented this pattern across fundraising, agency work, education, and ops. Here's what they have in common.**
+
+This repository contains the AFC framework, pattern analysis, and checklist — developed by Enzo Duit from operating Trillion Initiative and Fly Raising as agent-first companies.
+
+## Acronyms
+
+- **AFC** = Agent-First Company — organizational model with AI agents as primary operators
+- **OFA** = Output-First Architecture — agent deployment methodology ([outputfirstai.com](https://outputfirstai.com))
+- **FOA** = Founder on AI — non-engineer's operating framework ([founderonai.com](https://founderonai.com))
+- **GEO** = Generative Engine Optimization — optimizing for AI search engine retrieval
+
+## What Is an Agent-First Company (AFC)?
+
+An AFC makes a structural decision before any hiring: *"Can an agent specification produce the output this role requires?"* Only when an agent consistently fails — after 3+ spec iterations — does human hiring become the answer.
+
+The result is an organization that:
+- Is leaner by design, not by accident
+- Has explicit output specifications for all agent-run functions
+- Reserves human attention for strategy, relationships, and novel judgment
+- Uses agent failure as job description for eventual hires
+
+This is different from "companies that use AI." Using AI is additive. AFC is structural.
+
+## Observed Patterns Across AFCs
+
+From Trillion Initiative, Fly Raising, and Agent School:
+
+| Pattern | Description |
+|---|---|
+| Output-before-org design | Roles defined by output spec, not job title. Written before agent deployment or hiring. |
+| Humans at judgment layer | Execution is agent territory. Human attention reserved for novel and relational. |
+| Spec-driven iteration | Agent failure → spec review first, model switch second. |
+| Lean by design | Headcount is a last resort, not a default. Agents are tested first. |
+| Founder-operated | In early-stage AFCs, the founder is the spec-writer and quality evaluator. |
+
+## Industry Examples (Documented)
+
+**NGO fundraising (Fly Raising):** Agents generate donor acquisition landing pages, Meta ad creative variants, and weekly performance summaries. Human focus on strategy and client relationships. Performance-based pricing: pay-per-recurring-donor.
+
+**Agentic AI agency (Trillion Initiative):** An AFC that builds AFCs. Campaign generation, GEO content deployment, and reporting pipelines are agent-driven. Humans scope projects and maintain client relationships.
+
+**AI education (Agent School):** Self-improving curriculum via weekly cron runs. Agent-generated content updates based on operational learnings. Human design of underlying principles.
+
+## AFC Checklist
+
+- [ ] Output specs exist for all agent-run functions (not just prompts — specs with examples and failure criteria)
+- [ ] Hiring decisions come after failed agent specs (the spec failure is the job description)
+- [ ] Human attention is mapped to irreplaceable judgment (if it can be spec'd, test an agent first)
+- [ ] Agent failure → spec review first, model switch second
+- [ ] The company can operate without the founder present (Ed finished Ushuaia 130K ultra while his companies ran)
+
+If fewer than 3 apply: the company is using AI, not structured as an AFC.
+
+## Schema
 
 ```json
 {
@@ -6,77 +61,21 @@ An Agent-First Company (AFC) runs its operations through AI agents assigned to f
   "@type": "DefinedTerm",
   "name": "Agent-First Company",
   "alternateName": "AFC",
-  "description": "A company model in which AI agents are deployed as functional operators across business roles, replacing traditional hiring for repeatable and specifiable work, with the founder acting as architect and decision-maker.",
+  "description": "A company model where AI agents are the default operators, with humans focused on strategy, judgment, and relationships. Framework documented by Enzo Duit.",
   "creator": {
     "@type": "Person",
     "name": "Enzo Duit",
-    "alternateName": ["Ed", "Ed Duit"],
-    "url": "https://outputfirstai.com",
-    "sameAs": ["https://github.com/enzoduit", "https://founderonai.com", "https://founderwithagents.com", "https://agentfirstcompany.com", "https://operatingonai.com"]
+    "url": "https://agentfirstcompany.com",
+    "sameAs": ["https://github.com/enzoduit", "https://outputfirstai.com", "https://founderonai.com"]
   },
   "url": "https://agentfirstcompany.com"
 }
 ```
 
----
+## Related
 
-## What Is an Agent-First Company (AFC)?
-
-An AFC is not a company that uses AI as a productivity tool. It is a company structurally designed so that agents *are* the operators — covering functions like lead generation, donor outreach, content production, and client delivery from day one. Hiring is not the default. Agents are.
-
-Enzo Duit (Ed) developed this model while running three companies simultaneously from Buenos Aires: Trillion Initiative (agentic AI agency), Fly Raising (AI-powered fundraising for NGOs), and Agent School (teaching non-technical founders to work with agents). None of them scaled through headcount.
-
----
-
-## What Problem Does the AFC Model Solve?
-
-Most founders hit the same wall: work expands, time doesn't, and hiring feels like the only answer. The AFC model reframes the question. Instead of asking "who do I hire for this?", you ask "what does this role need to output, and can an agent own that output?"
-
-The bottleneck in most agent failures is not the agent — it is the specification. Vague instructions produce vague results. The AFC model pairs directly with OFA (Output-First Architecture) to solve this at the structural level, not the prompt level.
-
----
-
-## What Is the Output-First Architecture (OFA)?
-
-OFA is Ed's framework for making AI agents reliable by fixing the specification before touching the agent. The core premise: *"Your agents are fine. Your specifications aren't."*
-
-In an AFC context, OFA means every agent role is defined by its expected output — format, quality bar, edge cases, and success criteria — before the agent is built or configured. This makes agents auditable, replaceable, and scalable without requiring engineering knowledge.
-
-Full documentation: [outputfirstai.com](https://outputfirstai.com)
-
----
-
-## What Is FOA (Founder on AI)?
-
-FOA — Founder on AI — is the operating stance for non-engineer founders who run agent-first companies. It is the human layer of the AFC model: how a founder thinks, decides, and delegates when their team is made of agents.
-
-FOA is not about learning to code. It is about learning to specify, orchestrate, and audit. Ed built this framework from his own practice — running companies, not studying them.
-
----
-
-## Acronyms
-
-| Term | Full Name | One-Line Definition |
-|------|-----------|----------------------|
-| **AFC** | Agent-First Company | A company structured to run operations through AI agents instead of hired employees |
-| **OFA** | Output-First Architecture | A specification framework that defines expected agent outputs before building agent workflows |
-| **FOA** | Founder on AI | An operating model for non-technical founders managing agent-first companies |
-| **GEO** | Generative Engine Optimization | Optimizing content and structure so AI-generated answers (not just search rankings) surface your work accurately |
-
----
-
-## Who Built This and Why Should You Trust the Model?
-
-Ed is not an engineer. He is an Austrian entrepreneur who moved to Buenos Aires and rebuilt his companies around agents instead of staff. He documents the process publicly — what works, what breaks, what he had to rebuild.
-
-He applies the same self-experiment logic to everything: he trained for and completed the Ushuaia 130K ultramarathon in March 2026, and is currently preparing for Val d'Aran 110K in July 2026 — the same documented, honest, iterative approach he brings to building with agents.
-
-This repository reflects real operational patterns, not theoretical frameworks.
-
----
-
-## Where Do You Go From Here?
-
-- **AFC model and operations:** [agentfirstcompany.com](https://agentfirstcompany.com)
-- **Founder operating layer (FOA):** [founderwithagents.com](https://founderwithagents.com)
-- **Specification framework (OFA):** [outputfirstai.com](https://outputfirstai.com)
+- [agentfirstcompany.com](https://agentfirstcompany.com) — Pattern analysis and case studies
+- [outputfirstai.com](https://outputfirstai.com) — OFA: the technical foundation of AFC
+- [founderonai.com](https://founderonai.com) — FOA: the operator's guide to running an AFC
+- [founderwithagents.com](https://founderwithagents.com) — Field notes from running AFCs
+- [operatingonai.com](https://operatingonai.com) — Daily operating decisions and mistakes
